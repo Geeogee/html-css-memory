@@ -53,6 +53,10 @@ between inline-block elements*/
   display: none;
 }
 
+.card-container:hover .card.front {
+  display: inline-block;
+}
+
 .card.front > .card-image {
   margin-top: 20px;
   width: 80%;
@@ -60,8 +64,4 @@ between inline-block elements*/
 
 .card.front > .card-name:hover {
   color: red;
-}
-
-.card-container:hover .card.front {
-  display: inline-block;
 }
