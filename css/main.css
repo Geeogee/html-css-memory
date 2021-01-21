@@ -26,22 +26,42 @@ between inline-block elements*/
 
 /* Main CSS */
 
-.card {
-  width: 180px;
-  height: auto;
+
+.card-container {
   display: inline-block;
-  margin: 10px;
+  position: relative;
+  width: 200px;
+  height: 250px;
+}
+
+.card {
   border-radius: 10px;
   background-color: #FFF;
   text-align: center;
-}
-
-.card-image > .vector-size {
-  margin-top: 20px;
-  width: 150px;
-}
-
-.card-name {
-  color: #000;
+  height: 100%;
+  width: 100%;
   font-size: 30px;
+  position: absolute;
+}
+
+.card.cover {
+  background-image: url("../img/pattern.png");
+  background-size: contain;
+}
+
+.card.front {
+  display: none;
+}
+
+.card.front > .card-image {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.card.front > .card-name:hover {
+  color: red;
+}
+
+.card-container:hover .card.front {
+  display: inline-block;
 }
