@@ -23,7 +23,7 @@ header, footer {
 /* StackOverflow docet */
 /* By setting font-size:0 to a container
 you can remove the white spaces
-between inline-block elements*/
+between inline-block elements.  */
 .inline-block-fix {
   font-size: 0;
 }
@@ -96,17 +96,20 @@ anywhere in the div .front.card */
 
 .veryBigCheckbox {
   position: absolute;
-  z-index: 2; /*I'm on the top*/
+  z-index: 1;
   width: 100%;
   height: 100%;
-  opacity: 0; /*but you can't see me*/
+  opacity: 0;
 }
 
-/*The checkbox (ID) selects the adiacent div (.card.front)*/
+/*The checkbox (ID) selects the adiacent div (.card.front) */
+
 
 #mouseclick0:checked ~ .card.front {
   display: block;
 }
+
+
 
 #mouseclick1:checked ~ .card.front {
   display: block;
@@ -147,3 +150,5 @@ anywhere in the div .front.card */
 #mouseclick11:checked ~ .card.front {
   display: block;
 }
+
+/* Beacuse of the big checkbox, the title hover is bugged :(*/
