@@ -12,7 +12,7 @@ body {
 }
 
 .center-container {
-  width: 800px;
+  width: 680px;
   margin: 10px auto;
 }
 
@@ -24,18 +24,33 @@ between inline-block elements*/
   font-size: 0;
 }
 
+/* Header CSS*/
+
+header {
+  text-align: center;
+}
+
+#mainTitle {
+  font-size: 80px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #474747;
+  color: #FFF;
+}
+
 /* Main CSS */
 
 
 .card-container {
   display: inline-block;
   position: relative;
-  width: 200px;
-  height: 250px;
+  width: 150px;
+  height: 200px;
+  margin: 10px;
 }
 
 .card {
   border-radius: 10px;
+  box-shadow: 1px 1px 5px #474747;
   background-color: #FFF;
   text-align: center;
   height: 100%;
@@ -62,6 +77,15 @@ between inline-block elements*/
   width: 80%;
 }
 
+.card.front > .card-name {
+  color: #E61986;
+  text-shadow: 1px 1px 1px #474747;
+}
+
 .card.front > .card-name:hover {
-  color: red;
+  color: #E67919;
+}
+
+#upcard > .card.front {
+  display: block;
 }
