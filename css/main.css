@@ -1,3 +1,5 @@
+/* Base CSS */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +11,23 @@ body {
   background-color: #ADD8E6;
 }
 
+.center-container {
+  width: 693px;
+  margin: 0 auto;
+}
+
+/* Main CSS */
+
 
 .row {
   background-color: #000;
-  height: 30px;
-  margin-top: 10px;
+
+}
+
+.card {
+  width: 150px;
+  height: 170px;
+  background-color: red;
+  display: inline-block;
+  margin: 10px;
 }
