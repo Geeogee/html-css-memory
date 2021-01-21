@@ -16,6 +16,10 @@ body {
   margin: 10px auto;
 }
 
+header, footer {
+  text-align: center;
+}
+
 /* StackOverflow docet */
 /* By setting font-size:0 to a container
 you can remove the white spaces
@@ -26,10 +30,6 @@ between inline-block elements*/
 
 /* Header CSS*/
 
-header {
-  text-align: center;
-}
-
 #mainTitle {
   font-size: 80px;
   text-transform: uppercase;
@@ -38,7 +38,6 @@ header {
 }
 
 /* Main CSS */
-
 
 .card-container {
   display: inline-block;
@@ -68,8 +67,12 @@ header {
   display: none;
 }
 
+#upcard > .card.front {
+  display: block;
+}
+
 .card-container:hover .card.front {
-  display: inline-block;
+  display: block;
 }
 
 .card.front > .card-image {
@@ -84,8 +87,4 @@ header {
 
 .card.front > .card-name:hover {
   color: #E67919;
-}
-
-#upcard > .card.front {
-  display: block;
 }
