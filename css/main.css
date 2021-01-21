@@ -28,7 +28,7 @@ between inline-block elements*/
 
 .card {
   width: 180px;
-  height: 200px;
+  height: auto;
   display: inline-block;
   margin: 10px;
   border-radius: 10px;
