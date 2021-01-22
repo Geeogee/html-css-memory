@@ -110,50 +110,10 @@ anywhere in the div .front.card */
 
 /*The checkbox (ID) selects the adiacent div (.card.front) */
 
-
-#mouseclick0:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick1:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick2:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick3:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick4:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick6:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick7:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick8:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick9:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick10:checked ~ .card.front {
-  display: block;
-}
-
-#mouseclick11:checked ~ .card.front {
+input[type="checkbox"][id*="mouseclick"]:checked ~ .card.front {
   display: block;
 }
 
 /* The bug: checkbox setted with 100% and z-index 1
-stays on top, so hover on the text doesn't work*/
+stays on top, so hover on the text doesn't work
+EDIT: Hover works on the text now*/
